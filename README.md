@@ -6,5 +6,5 @@ produces neat desktops, like this:
 
 ```
 sudo python setup.py install
-sudo wallpaper [a subreddit, default is ultrahdwallpapers] 
+sudo wallpaper [a subreddit, default is earthporn] 
 ```

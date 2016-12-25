@@ -20,7 +20,7 @@ def main():
   if len(sys.argv) >= 2:
     query = sys.argv[1]
   else:
-    query = 'natureporn'
+    query = 'earthporn'
   desktop_location = "/Library/Desktop Pictures/"
   purge(desktop_location, "reddit")
   image_name = desktop_location + "reddit" + str(random.random())[2:] + '.jpg'
