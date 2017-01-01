@@ -16,7 +16,7 @@ config = {
       ]
     },
     'package_data': {
-      'wallpaper': ["secret/user.json"]
+      'wallpaper': ["config/config.json", "config/secret.json"]
     },
     'include_package_data': True
 }

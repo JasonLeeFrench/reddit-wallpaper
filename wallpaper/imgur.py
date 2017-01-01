@@ -3,7 +3,7 @@ import json
 import random
 import os
 
-user = json.load(open(os.path.join(os.path.dirname(__file__), 'secret/user.json')))
+user = json.load(open(os.path.join(os.path.dirname(__file__), 'config/secret.json')))
 client = ImgurClient(user['id'], user['secret'])
 
 def get_subreddit_gallary(query):

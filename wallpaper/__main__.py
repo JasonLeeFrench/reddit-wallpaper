@@ -3,6 +3,9 @@ import imgur
 import urllib
 import random
 import os, re, sys
+import json
+
+config = json.load(open(os.path.join(os.path.dirname(__file__), 'config/config.json')))
 
 def purge(dir, pattern):
     for f in os.listdir(dir):
@@ -20,8 +23,8 @@ def main():
   if len(sys.argv) >= 2:
     query = sys.argv[1]
   else:
-    query = 'earthporn'
-  desktop_location = "/Library/Desktop Pictures/"
+    query = config['default_subreddit']
+  desktop_location = config['desktop_location']
   purge(desktop_location, "reddit")
   image_name = desktop_location + "reddit" + str(random.random())[2:] + '.jpg'
   url = imgur.get_image_url(query)
